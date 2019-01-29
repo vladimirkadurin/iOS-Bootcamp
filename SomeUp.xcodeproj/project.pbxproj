@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		A92BF4C321F9FDFC0050ACCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92BF4C221F9FDFC0050ACCD /* AppDelegate.swift */; };
-		A92BF4C521F9FDFC0050ACCD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92BF4C421F9FDFC0050ACCD /* ViewController.swift */; };
 		A92BF4C821F9FDFC0050ACCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A92BF4C621F9FDFC0050ACCD /* Main.storyboard */; };
 		A92BF4CA21F9FDFE0050ACCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A92BF4C921F9FDFE0050ACCD /* Assets.xcassets */; };
 		A92BF4CD21F9FDFE0050ACCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A92BF4CB21F9FDFE0050ACCD /* LaunchScreen.storyboard */; };
+		A92BF4D621F9FEA80050ACCD /* GalleryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92BF4D521F9FEA80050ACCD /* GalleryVC.swift */; };
+		A92BF4D921FA05E30050ACCD /* GalleryPermissionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92BF4D821FA05E30050ACCD /* GalleryPermissionHandler.swift */; };
+		A92BF4DB21FA10100050ACCD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92BF4DA21FA10100050ACCD /* Constants.swift */; };
+		A92BF4DE21FA143B0050ACCD /* GalleryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92BF4DD21FA143B0050ACCD /* GalleryViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A92BF4BF21F9FDFC0050ACCD /* SomeUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SomeUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A92BF4C221F9FDFC0050ACCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A92BF4C421F9FDFC0050ACCD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A92BF4C721F9FDFC0050ACCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A92BF4C921F9FDFE0050ACCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A92BF4CC21F9FDFE0050ACCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A92BF4CE21F9FDFE0050ACCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A92BF4D521F9FEA80050ACCD /* GalleryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryVC.swift; sourceTree = "<group>"; };
+		A92BF4D821FA05E30050ACCD /* GalleryPermissionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryPermissionHandler.swift; sourceTree = "<group>"; };
+		A92BF4DA21FA10100050ACCD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A92BF4DD21FA143B0050ACCD /* GalleryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,41 @@
 		A92BF4C121F9FDFC0050ACCD /* SomeUp */ = {
 			isa = PBXGroup;
 			children = (
+				A92BF4DC21FA14250050ACCD /* ViewModels */,
+				A92BF4D721FA05990050ACCD /* Utilities */,
+				A92BF4D421F9FE130050ACCD /* ViewControllers */,
 				A92BF4C221F9FDFC0050ACCD /* AppDelegate.swift */,
-				A92BF4C421F9FDFC0050ACCD /* ViewController.swift */,
 				A92BF4C621F9FDFC0050ACCD /* Main.storyboard */,
 				A92BF4C921F9FDFE0050ACCD /* Assets.xcassets */,
 				A92BF4CB21F9FDFE0050ACCD /* LaunchScreen.storyboard */,
 				A92BF4CE21F9FDFE0050ACCD /* Info.plist */,
+				A92BF4DA21FA10100050ACCD /* Constants.swift */,
 			);
 			path = SomeUp;
+			sourceTree = "<group>";
+		};
+		A92BF4D421F9FE130050ACCD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A92BF4D521F9FEA80050ACCD /* GalleryVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A92BF4D721FA05990050ACCD /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A92BF4D821FA05E30050ACCD /* GalleryPermissionHandler.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A92BF4DC21FA14250050ACCD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A92BF4DD21FA143B0050ACCD /* GalleryViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A92BF4C521F9FDFC0050ACCD /* ViewController.swift in Sources */,
 				A92BF4C321F9FDFC0050ACCD /* AppDelegate.swift in Sources */,
+				A92BF4DE21FA143B0050ACCD /* GalleryViewModel.swift in Sources */,
+				A92BF4D621F9FEA80050ACCD /* GalleryVC.swift in Sources */,
+				A92BF4D921FA05E30050ACCD /* GalleryPermissionHandler.swift in Sources */,
+				A92BF4DB21FA10100050ACCD /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +321,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3Y4TPL53D2;
 				INFOPLIST_FILE = SomeUp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +340,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3Y4TPL53D2;
 				INFOPLIST_FILE = SomeUp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
