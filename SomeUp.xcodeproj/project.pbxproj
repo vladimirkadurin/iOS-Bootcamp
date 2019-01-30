@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A915DFFD220096E800009168 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A915DFFB220096E800009168 /* PhotoCell.swift */; };
+		A915DFFE220096E800009168 /* PhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A915DFFC220096E800009168 /* PhotoCell.xib */; };
+		A915E0002200A59B00009168 /* EmptyPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A915DFFF2200A59B00009168 /* EmptyPlaceholderView.swift */; };
+		A915E0022200A5EC00009168 /* EmptyPlaceholderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A915E0012200A5EC00009168 /* EmptyPlaceholderView.xib */; };
+		A915E0052200A87900009168 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A915E0042200A87900009168 /* UICollectionView+Extension.swift */; };
 		A92BF4C321F9FDFC0050ACCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92BF4C221F9FDFC0050ACCD /* AppDelegate.swift */; };
 		A92BF4C821F9FDFC0050ACCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A92BF4C621F9FDFC0050ACCD /* Main.storyboard */; };
 		A92BF4CA21F9FDFE0050ACCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A92BF4C921F9FDFE0050ACCD /* Assets.xcassets */; };
@@ -18,6 +23,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A915DFFB220096E800009168 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		A915DFFC220096E800009168 /* PhotoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCell.xib; sourceTree = "<group>"; };
+		A915DFFF2200A59B00009168 /* EmptyPlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyPlaceholderView.swift; sourceTree = "<group>"; };
+		A915E0012200A5EC00009168 /* EmptyPlaceholderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyPlaceholderView.xib; sourceTree = "<group>"; };
+		A915E0042200A87900009168 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
 		A92BF4BF21F9FDFC0050ACCD /* SomeUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SomeUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A92BF4C221F9FDFC0050ACCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A92BF4C721F9FDFC0050ACCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -41,6 +51,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A915DFFA220096BB00009168 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				A915DFFB220096E800009168 /* PhotoCell.swift */,
+				A915DFFC220096E800009168 /* PhotoCell.xib */,
+				A915DFFF2200A59B00009168 /* EmptyPlaceholderView.swift */,
+				A915E0012200A5EC00009168 /* EmptyPlaceholderView.xib */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		A915E0032200A85700009168 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A915E0042200A87900009168 /* UICollectionView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		A92BF4B621F9FDFC0050ACCD = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +89,8 @@
 		A92BF4C121F9FDFC0050ACCD /* SomeUp */ = {
 			isa = PBXGroup;
 			children = (
+				A915E0032200A85700009168 /* Extensions */,
+				A915DFFA220096BB00009168 /* CustomViews */,
 				A92BF4DC21FA14250050ACCD /* ViewModels */,
 				A92BF4D721FA05990050ACCD /* Utilities */,
 				A92BF4D421F9FE130050ACCD /* ViewControllers */,
@@ -155,7 +186,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A915DFFE220096E800009168 /* PhotoCell.xib in Resources */,
 				A92BF4CD21F9FDFE0050ACCD /* LaunchScreen.storyboard in Resources */,
+				A915E0022200A5EC00009168 /* EmptyPlaceholderView.xib in Resources */,
 				A92BF4CA21F9FDFE0050ACCD /* Assets.xcassets in Resources */,
 				A92BF4C821F9FDFC0050ACCD /* Main.storyboard in Resources */,
 			);
@@ -168,10 +201,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A915E0052200A87900009168 /* UICollectionView+Extension.swift in Sources */,
 				A92BF4C321F9FDFC0050ACCD /* AppDelegate.swift in Sources */,
 				A92BF4DE21FA143B0050ACCD /* GalleryViewModel.swift in Sources */,
 				A92BF4D621F9FEA80050ACCD /* GalleryVC.swift in Sources */,
 				A92BF4D921FA05E30050ACCD /* GalleryPermissionHandler.swift in Sources */,
+				A915E0002200A59B00009168 /* EmptyPlaceholderView.swift in Sources */,
+				A915DFFD220096E800009168 /* PhotoCell.swift in Sources */,
 				A92BF4DB21FA10100050ACCD /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

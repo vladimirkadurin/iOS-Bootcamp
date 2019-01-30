@@ -23,4 +23,15 @@ class GalleryViewModel {
     func getAsset(index: Int) -> PHAsset? {
         return allPhotos?[index]
     }
+
+    func extractImageFrom(asset: PHAsset?, size: CGSize, callback: @escaping (UIImage?) -> ()) {
+        guard let asset = asset else {
+            callback(nil)
+            return
+        }
+
+        PHImageManager.default().requestImage(for: asset, targetSize: size, contentMode: .aspectFit, options: nil) { (image, info) in
+            callback(image)
+        }
+    }
 }
