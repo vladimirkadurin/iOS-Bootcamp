@@ -54,16 +54,31 @@
             </objects>
             <point key="canvasLocation" x="220" y="152"/>
         </scene>
-        <!--View Controller-->
+        <!--Photo Link ListVC-->
         <scene sceneID="bBO-B2-PiD">
             <objects>
-                <viewController id="R7l-Fn-fZM" sceneMemberID="viewController">
+                <viewController id="R7l-Fn-fZM" customClass="PhotoLinkListVC" customModule="SomeUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FUd-Zt-W6y">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="T9t-ua-gFP">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="T9t-ua-gFP" firstAttribute="leading" secondItem="ePq-Mp-kFh" secondAttribute="leading" id="6zf-Uv-hee"/>
+                            <constraint firstItem="T9t-ua-gFP" firstAttribute="top" secondItem="ePq-Mp-kFh" secondAttribute="top" id="BK0-Du-Vlv"/>
+                            <constraint firstItem="ePq-Mp-kFh" firstAttribute="trailing" secondItem="T9t-ua-gFP" secondAttribute="trailing" id="ERX-V8-w54"/>
+                            <constraint firstItem="ePq-Mp-kFh" firstAttribute="bottom" secondItem="T9t-ua-gFP" secondAttribute="bottom" id="T8T-2V-hCg"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ePq-Mp-kFh"/>
                     </view>
+                    <connections>
+                        <outlet property="photoLinksTableView" destination="T9t-ua-gFP" id="3wp-aN-uuu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nOT-JR-Cke" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -20,6 +20,14 @@
 		A92BF4D921FA05E30050ACCD /* GalleryPermissionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92BF4D821FA05E30050ACCD /* GalleryPermissionHandler.swift */; };
 		A92BF4DB21FA10100050ACCD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92BF4DA21FA10100050ACCD /* Constants.swift */; };
 		A92BF4DE21FA143B0050ACCD /* GalleryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92BF4DD21FA143B0050ACCD /* GalleryViewModel.swift */; };
+		A9A4DB612209D03600A3A268 /* PhotoLinkListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A4DB602209D03600A3A268 /* PhotoLinkListVC.swift */; };
+		A9A4DB642209D20400A3A268 /* PhotoLinkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A4DB622209D20400A3A268 /* PhotoLinkCell.swift */; };
+		A9A4DB652209D20400A3A268 /* PhotoLinkCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9A4DB632209D20400A3A268 /* PhotoLinkCell.xib */; };
+		A9A4DB672209D35000A3A268 /* PhotoLinksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A4DB662209D35000A3A268 /* PhotoLinksViewModel.swift */; };
+		A9A4DB6A2209D63600A3A268 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A4DB692209D63600A3A268 /* NetworkManager.swift */; };
+		A9A4DB6C2209D9FA00A3A268 /* NSMutableData+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A4DB6B2209D9FA00A3A268 /* NSMutableData+Extension.swift */; };
+		A9A4DB6E2209E43B00A3A268 /* NSError+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A4DB6D2209E43B00A3A268 /* NSError+Extension.swift */; };
+		A9A4DB702209E67B00A3A268 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A4DB6F2209E67B00A3A268 /* UIViewController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +46,14 @@
 		A92BF4D821FA05E30050ACCD /* GalleryPermissionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryPermissionHandler.swift; sourceTree = "<group>"; };
 		A92BF4DA21FA10100050ACCD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A92BF4DD21FA143B0050ACCD /* GalleryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewModel.swift; sourceTree = "<group>"; };
+		A9A4DB602209D03600A3A268 /* PhotoLinkListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLinkListVC.swift; sourceTree = "<group>"; };
+		A9A4DB622209D20400A3A268 /* PhotoLinkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLinkCell.swift; sourceTree = "<group>"; };
+		A9A4DB632209D20400A3A268 /* PhotoLinkCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoLinkCell.xib; sourceTree = "<group>"; };
+		A9A4DB662209D35000A3A268 /* PhotoLinksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLinksViewModel.swift; sourceTree = "<group>"; };
+		A9A4DB692209D63600A3A268 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A9A4DB6B2209D9FA00A3A268 /* NSMutableData+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableData+Extension.swift"; sourceTree = "<group>"; };
+		A9A4DB6D2209E43B00A3A268 /* NSError+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSError+Extension.swift"; sourceTree = "<group>"; };
+		A9A4DB6F2209E67B00A3A268 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +74,8 @@
 				A915DFFC220096E800009168 /* PhotoCell.xib */,
 				A915DFFF2200A59B00009168 /* EmptyPlaceholderView.swift */,
 				A915E0012200A5EC00009168 /* EmptyPlaceholderView.xib */,
+				A9A4DB622209D20400A3A268 /* PhotoLinkCell.swift */,
+				A9A4DB632209D20400A3A268 /* PhotoLinkCell.xib */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -66,6 +84,9 @@
 			isa = PBXGroup;
 			children = (
 				A915E0042200A87900009168 /* UICollectionView+Extension.swift */,
+				A9A4DB6B2209D9FA00A3A268 /* NSMutableData+Extension.swift */,
+				A9A4DB6D2209E43B00A3A268 /* NSError+Extension.swift */,
+				A9A4DB6F2209E67B00A3A268 /* UIViewController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -89,6 +110,7 @@
 		A92BF4C121F9FDFC0050ACCD /* SomeUp */ = {
 			isa = PBXGroup;
 			children = (
+				A9A4DB682209D62500A3A268 /* Managers */,
 				A915E0032200A85700009168 /* Extensions */,
 				A915DFFA220096BB00009168 /* CustomViews */,
 				A92BF4DC21FA14250050ACCD /* ViewModels */,
@@ -108,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				A92BF4D521F9FEA80050ACCD /* GalleryVC.swift */,
+				A9A4DB602209D03600A3A268 /* PhotoLinkListVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -124,8 +147,17 @@
 			isa = PBXGroup;
 			children = (
 				A92BF4DD21FA143B0050ACCD /* GalleryViewModel.swift */,
+				A9A4DB662209D35000A3A268 /* PhotoLinksViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A9A4DB682209D62500A3A268 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A9A4DB692209D63600A3A268 /* NetworkManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +222,7 @@
 				A92BF4CD21F9FDFE0050ACCD /* LaunchScreen.storyboard in Resources */,
 				A915E0022200A5EC00009168 /* EmptyPlaceholderView.xib in Resources */,
 				A92BF4CA21F9FDFE0050ACCD /* Assets.xcassets in Resources */,
+				A9A4DB652209D20400A3A268 /* PhotoLinkCell.xib in Resources */,
 				A92BF4C821F9FDFC0050ACCD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -201,14 +234,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9A4DB6A2209D63600A3A268 /* NetworkManager.swift in Sources */,
+				A9A4DB6C2209D9FA00A3A268 /* NSMutableData+Extension.swift in Sources */,
 				A915E0052200A87900009168 /* UICollectionView+Extension.swift in Sources */,
+				A9A4DB702209E67B00A3A268 /* UIViewController+Extension.swift in Sources */,
 				A92BF4C321F9FDFC0050ACCD /* AppDelegate.swift in Sources */,
 				A92BF4DE21FA143B0050ACCD /* GalleryViewModel.swift in Sources */,
 				A92BF4D621F9FEA80050ACCD /* GalleryVC.swift in Sources */,
+				A9A4DB642209D20400A3A268 /* PhotoLinkCell.swift in Sources */,
 				A92BF4D921FA05E30050ACCD /* GalleryPermissionHandler.swift in Sources */,
 				A915E0002200A59B00009168 /* EmptyPlaceholderView.swift in Sources */,
 				A915DFFD220096E800009168 /* PhotoCell.swift in Sources */,
 				A92BF4DB21FA10100050ACCD /* Constants.swift in Sources */,
+				A9A4DB6E2209E43B00A3A268 /* NSError+Extension.swift in Sources */,
+				A9A4DB672209D35000A3A268 /* PhotoLinksViewModel.swift in Sources */,
+				A9A4DB612209D03600A3A268 /* PhotoLinkListVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

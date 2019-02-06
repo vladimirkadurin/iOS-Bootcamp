@@ -15,6 +15,8 @@ class GalleryVC: UIViewController, GalleryPermissionHandler {
 
     let photoOffset: CGFloat = 10
 
+    var currentIndexPath: IndexPath?
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,6 +26,8 @@ class GalleryVC: UIViewController, GalleryPermissionHandler {
         photoCollectionView.dataSource = self
         photoCollectionView.delegate = self
         photoCollectionView.setupBackgroundViewWith(delegate: self)
+
+        viewModel.delegate = self
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -67,6 +71,10 @@ extension GalleryVC: UICollectionViewDataSource, UICollectionViewDelegateFlowLay
         return cell ?? UICollectionViewCell()
     }
 
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        viewModel.uploadImageWith(indexPath: indexPath)
+    }
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 
         var columnCount: CGFloat = 3
@@ -90,5 +98,27 @@ extension GalleryVC: UICollectionViewDataSource, UICollectionViewDelegateFlowLay
 extension GalleryVC: EmptyPlaceholderProtocol {
     func emptyPlaceholderView(_ view: EmptyPlaceholderView, didTapOn: UIButton) {
         handlePermission()
+    }
+}
+
+extension GalleryVC: ImageUploadProtocol {
+    func didStartUploadingWith(indexPath: IndexPath) {
+        DispatchQueue.main.async { [weak self] in
+            if let currentCell = self?.photoCollectionView.cellForItem(at: indexPath) as? PhotoCell {
+                currentCell.startLoading()
+            }
+        }
+    }
+
+    func didFinishUploadingWith(error: NSError?, indexPath: IndexPath) {
+        DispatchQueue.main.async { [weak self] in
+            if let currentCell = self?.photoCollectionView.cellForItem(at: indexPath) as? PhotoCell {
+                currentCell.stopLoading()
+            }
+
+            if let error = error {
+                self?.showPopupWith(message: error.localizedDescription)
+            }
+        }
     }
 }
