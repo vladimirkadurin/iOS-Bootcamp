@@ -63,7 +63,7 @@ extension GalleryVC: UICollectionViewDataSource, UICollectionViewDelegateFlowLay
 
         if let photoCell = collectionView.dequeueReusableCell(withReuseIdentifier: "\(PhotoCell.self)", for: indexPath) as? PhotoCell {
             viewModel.extractImageFrom(asset: viewModel.getAsset(index: indexPath.row), size: photoCell.bounds.size) { (image) in
-                photoCell.loadWith(image: image)
+                photoCell.loadWith(image: image, isUploading: self.viewModel.isCurrentlyUploadingWith(index: indexPath.row))
             }
             cell = photoCell
         }

@@ -36,7 +36,7 @@ class NetworkManager {
             do {
                 if let imageData = data, let jsonDict = try JSONSerialization.jsonObject(with: imageData, options: []) as? [String: Any], let dataDict = jsonDict["data"] as? [String: Any] {
 
-                    print(dataDict)
+                    //print(dataDict)
                     
                     if let link = dataDict["link"] as? String {
                         completion(nil, link)

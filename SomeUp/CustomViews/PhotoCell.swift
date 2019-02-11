@@ -19,8 +19,14 @@ class PhotoCell: UICollectionViewCell {
         stopLoading()
     }
 
-    func loadWith(image: UIImage?) {
+    func loadWith(image: UIImage?, isUploading: Bool) {
         guard let image = image else { return }
+
+        if isUploading {
+            startLoading()
+        } else {
+            stopLoading()
+        }
 
         photoImageView.image = image
     }

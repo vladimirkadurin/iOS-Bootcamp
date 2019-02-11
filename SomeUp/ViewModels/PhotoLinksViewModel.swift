@@ -9,13 +9,12 @@
 import Foundation
 
 class PhotoLinksViewModel {
-    private var dataSource = ["link1", "link2", "link3"]
 
     func getCount() -> Int {
-        return dataSource.count
+        return DataManager.shared.getCount()
     }
 
     func getItemAt(index: Int) -> String {
-        return dataSource[index]
+        return DataManager.shared.getItemAt(index: index)
     }
 }

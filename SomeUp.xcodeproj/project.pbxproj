@@ -28,6 +28,8 @@
 		A9A4DB6C2209D9FA00A3A268 /* NSMutableData+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A4DB6B2209D9FA00A3A268 /* NSMutableData+Extension.swift */; };
 		A9A4DB6E2209E43B00A3A268 /* NSError+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A4DB6D2209E43B00A3A268 /* NSError+Extension.swift */; };
 		A9A4DB702209E67B00A3A268 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A4DB6F2209E67B00A3A268 /* UIViewController+Extension.swift */; };
+		A9A4DB90220C85EA00A3A268 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A4DB8F220C85EA00A3A268 /* DataManager.swift */; };
+		A9A4DB92220C87EA00A3A268 /* BindableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A4DB91220C87EA00A3A268 /* BindableObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		A9A4DB6B2209D9FA00A3A268 /* NSMutableData+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableData+Extension.swift"; sourceTree = "<group>"; };
 		A9A4DB6D2209E43B00A3A268 /* NSError+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSError+Extension.swift"; sourceTree = "<group>"; };
 		A9A4DB6F2209E67B00A3A268 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		A9A4DB8F220C85EA00A3A268 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		A9A4DB91220C87EA00A3A268 /* BindableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindableObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				A92BF4D821FA05E30050ACCD /* GalleryPermissionHandler.swift */,
+				A9A4DB91220C87EA00A3A268 /* BindableObject.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -156,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				A9A4DB692209D63600A3A268 /* NetworkManager.swift */,
+				A9A4DB8F220C85EA00A3A268 /* DataManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -235,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9A4DB6A2209D63600A3A268 /* NetworkManager.swift in Sources */,
+				A9A4DB90220C85EA00A3A268 /* DataManager.swift in Sources */,
 				A9A4DB6C2209D9FA00A3A268 /* NSMutableData+Extension.swift in Sources */,
 				A915E0052200A87900009168 /* UICollectionView+Extension.swift in Sources */,
 				A9A4DB702209E67B00A3A268 /* UIViewController+Extension.swift in Sources */,
@@ -246,6 +253,7 @@
 				A915E0002200A59B00009168 /* EmptyPlaceholderView.swift in Sources */,
 				A915DFFD220096E800009168 /* PhotoCell.swift in Sources */,
 				A92BF4DB21FA10100050ACCD /* Constants.swift in Sources */,
+				A9A4DB92220C87EA00A3A268 /* BindableObject.swift in Sources */,
 				A9A4DB6E2209E43B00A3A268 /* NSError+Extension.swift in Sources */,
 				A9A4DB672209D35000A3A268 /* PhotoLinksViewModel.swift in Sources */,
 				A9A4DB612209D03600A3A268 /* PhotoLinkListVC.swift in Sources */,

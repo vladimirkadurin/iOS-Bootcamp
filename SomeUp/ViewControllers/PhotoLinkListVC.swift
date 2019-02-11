@@ -20,6 +20,13 @@ class PhotoLinkListVC: UIViewController {
 
         photoLinksTableView.dataSource = self
         photoLinksTableView.delegate = self
+
+        DataManager.shared.refreshValue.bindAndFire { (success) in
+            
+            DispatchQueue.main.async { [weak self] in
+                self?.photoLinksTableView.reloadData()
+            }
+        }
     }
 }
 
