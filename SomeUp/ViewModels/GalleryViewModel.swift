@@ -72,15 +72,21 @@ class GalleryViewModel {
                     NetworkManager.upload(image: image, completion: { [weak self] (error, imageUrl) in
                         // Save to DB
                         print("Finish uploading")
-                        if let imageUrl = imageUrl {
-                            DataManager.shared.add(item: imageUrl)
-                        }
+                        self?.save(link: imageUrl)
 
                         self?.removePhotoIndex(indexPath.row)
                         self?.delegate?.didFinishUploadingWith(error: error, indexPath: indexPath)
                         self?.dispatchGroup.leave()
                     })
                 }
+            }
+        }
+    }
+
+    private func save(link: String?) {
+        DispatchQueue.main.async {
+            if let delegate = UIApplication.shared.delegate as? AppDelegate {
+                UploadItem.createUploadItemWith(link: link, managedObjectContext: delegate.managedObjectContext)
             }
         }
     }

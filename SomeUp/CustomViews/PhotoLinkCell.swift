@@ -16,7 +16,7 @@ class PhotoLinkCell: UITableViewCell {
         // Initialization code
     }
 
-    func loadWith(data: String) {
-        photoLinkLabel.text = data
+    func loadWith(data: UploadItem) {
+        photoLinkLabel.text = data.link
     }
 }

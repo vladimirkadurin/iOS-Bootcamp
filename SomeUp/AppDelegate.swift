@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -42,6 +43,37 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    lazy var managedObjectModel: NSManagedObjectModel = {
+        let modelURL = Bundle.main.url(forResource: "UploadList", withExtension: "momd")!
+        return NSManagedObjectModel(contentsOf: modelURL)!
+    }()
 
+    lazy var managedObjectContext: NSManagedObjectContext = {
+        let persistentStoreCoordinator = self.persistanceStoreCoordinator
+
+        var managedObjectContext = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
+
+        managedObjectContext.persistentStoreCoordinator = persistentStoreCoordinator
+
+        return managedObjectContext
+    }()
+
+    lazy var persistanceStoreCoordinator: NSPersistentStoreCoordinator = {
+        let persistentStoreCoordinator = NSPersistentStoreCoordinator(managedObjectModel: self.managedObjectModel)
+
+        let URLs = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        let applicationDocumentDirectory = URLs.last!
+
+        let URLPersistanceStore = applicationDocumentDirectory.appendingPathComponent("UploadList.sqlite")
+
+        do {
+            try persistentStoreCoordinator.addPersistentStore(ofType: NSSQLiteStoreType, configurationName: nil, at: URLPersistanceStore, options: nil)
+        } catch {
+            let storeError = error as NSError
+            print("Unresolved error \(storeError), \(storeError.userInfo)")
+        }
+
+        return persistentStoreCoordinator
+    }()
 }
 

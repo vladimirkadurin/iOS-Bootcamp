@@ -23,13 +23,15 @@
 		A9A4DB612209D03600A3A268 /* PhotoLinkListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A4DB602209D03600A3A268 /* PhotoLinkListVC.swift */; };
 		A9A4DB642209D20400A3A268 /* PhotoLinkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A4DB622209D20400A3A268 /* PhotoLinkCell.swift */; };
 		A9A4DB652209D20400A3A268 /* PhotoLinkCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9A4DB632209D20400A3A268 /* PhotoLinkCell.xib */; };
-		A9A4DB672209D35000A3A268 /* PhotoLinksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A4DB662209D35000A3A268 /* PhotoLinksViewModel.swift */; };
 		A9A4DB6A2209D63600A3A268 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A4DB692209D63600A3A268 /* NetworkManager.swift */; };
 		A9A4DB6C2209D9FA00A3A268 /* NSMutableData+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A4DB6B2209D9FA00A3A268 /* NSMutableData+Extension.swift */; };
 		A9A4DB6E2209E43B00A3A268 /* NSError+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A4DB6D2209E43B00A3A268 /* NSError+Extension.swift */; };
 		A9A4DB702209E67B00A3A268 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A4DB6F2209E67B00A3A268 /* UIViewController+Extension.swift */; };
-		A9A4DB90220C85EA00A3A268 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A4DB8F220C85EA00A3A268 /* DataManager.swift */; };
 		A9A4DB92220C87EA00A3A268 /* BindableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A4DB91220C87EA00A3A268 /* BindableObject.swift */; };
+		A9A98DDE22130CCD00E00166 /* UploadList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A9A98DDC22130CCD00E00166 /* UploadList.xcdatamodeld */; };
+		A9A98DE122130F8400E00166 /* UploadItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A98DDF22130F8400E00166 /* UploadItem+CoreDataClass.swift */; };
+		A9A98DE222130F8400E00166 /* UploadItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A98DE022130F8400E00166 /* UploadItem+CoreDataProperties.swift */; };
+		A9A98DE42213211C00E00166 /* AppDelegate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A98DE32213211C00E00166 /* AppDelegate+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,13 +53,15 @@
 		A9A4DB602209D03600A3A268 /* PhotoLinkListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLinkListVC.swift; sourceTree = "<group>"; };
 		A9A4DB622209D20400A3A268 /* PhotoLinkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLinkCell.swift; sourceTree = "<group>"; };
 		A9A4DB632209D20400A3A268 /* PhotoLinkCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoLinkCell.xib; sourceTree = "<group>"; };
-		A9A4DB662209D35000A3A268 /* PhotoLinksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLinksViewModel.swift; sourceTree = "<group>"; };
 		A9A4DB692209D63600A3A268 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		A9A4DB6B2209D9FA00A3A268 /* NSMutableData+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableData+Extension.swift"; sourceTree = "<group>"; };
 		A9A4DB6D2209E43B00A3A268 /* NSError+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSError+Extension.swift"; sourceTree = "<group>"; };
 		A9A4DB6F2209E67B00A3A268 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
-		A9A4DB8F220C85EA00A3A268 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		A9A4DB91220C87EA00A3A268 /* BindableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindableObject.swift; sourceTree = "<group>"; };
+		A9A98DDD22130CCD00E00166 /* UploadList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UploadList.xcdatamodel; sourceTree = "<group>"; };
+		A9A98DDF22130F8400E00166 /* UploadItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UploadItem+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A9A98DE022130F8400E00166 /* UploadItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UploadItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A9A98DE32213211C00E00166 /* AppDelegate+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,7 @@
 				A9A4DB6B2209D9FA00A3A268 /* NSMutableData+Extension.swift */,
 				A9A4DB6D2209E43B00A3A268 /* NSError+Extension.swift */,
 				A9A4DB6F2209E67B00A3A268 /* UIViewController+Extension.swift */,
+				A9A98DE32213211C00E00166 /* AppDelegate+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -114,6 +119,7 @@
 		A92BF4C121F9FDFC0050ACCD /* SomeUp */ = {
 			isa = PBXGroup;
 			children = (
+				A9A98DDB22130CA900E00166 /* Model */,
 				A9A4DB682209D62500A3A268 /* Managers */,
 				A915E0032200A85700009168 /* Extensions */,
 				A915DFFA220096BB00009168 /* CustomViews */,
@@ -152,7 +158,6 @@
 			isa = PBXGroup;
 			children = (
 				A92BF4DD21FA143B0050ACCD /* GalleryViewModel.swift */,
-				A9A4DB662209D35000A3A268 /* PhotoLinksViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -161,9 +166,18 @@
 			isa = PBXGroup;
 			children = (
 				A9A4DB692209D63600A3A268 /* NetworkManager.swift */,
-				A9A4DB8F220C85EA00A3A268 /* DataManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		A9A98DDB22130CA900E00166 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A9A98DDF22130F8400E00166 /* UploadItem+CoreDataClass.swift */,
+				A9A98DE022130F8400E00166 /* UploadItem+CoreDataProperties.swift */,
+				A9A98DDC22130CCD00E00166 /* UploadList.xcdatamodeld */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,13 +255,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9A4DB6A2209D63600A3A268 /* NetworkManager.swift in Sources */,
-				A9A4DB90220C85EA00A3A268 /* DataManager.swift in Sources */,
 				A9A4DB6C2209D9FA00A3A268 /* NSMutableData+Extension.swift in Sources */,
 				A915E0052200A87900009168 /* UICollectionView+Extension.swift in Sources */,
+				A9A98DE122130F8400E00166 /* UploadItem+CoreDataClass.swift in Sources */,
+				A9A98DDE22130CCD00E00166 /* UploadList.xcdatamodeld in Sources */,
 				A9A4DB702209E67B00A3A268 /* UIViewController+Extension.swift in Sources */,
 				A92BF4C321F9FDFC0050ACCD /* AppDelegate.swift in Sources */,
 				A92BF4DE21FA143B0050ACCD /* GalleryViewModel.swift in Sources */,
+				A9A98DE222130F8400E00166 /* UploadItem+CoreDataProperties.swift in Sources */,
 				A92BF4D621F9FEA80050ACCD /* GalleryVC.swift in Sources */,
+				A9A98DE42213211C00E00166 /* AppDelegate+Extension.swift in Sources */,
 				A9A4DB642209D20400A3A268 /* PhotoLinkCell.swift in Sources */,
 				A92BF4D921FA05E30050ACCD /* GalleryPermissionHandler.swift in Sources */,
 				A915E0002200A59B00009168 /* EmptyPlaceholderView.swift in Sources */,
@@ -255,7 +272,6 @@
 				A92BF4DB21FA10100050ACCD /* Constants.swift in Sources */,
 				A9A4DB92220C87EA00A3A268 /* BindableObject.swift in Sources */,
 				A9A4DB6E2209E43B00A3A268 /* NSError+Extension.swift in Sources */,
-				A9A4DB672209D35000A3A268 /* PhotoLinksViewModel.swift in Sources */,
 				A9A4DB612209D03600A3A268 /* PhotoLinkListVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,6 +474,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A9A98DDC22130CCD00E00166 /* UploadList.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A9A98DDD22130CCD00E00166 /* UploadList.xcdatamodel */,
+			);
+			currentVersion = A9A98DDD22130CCD00E00166 /* UploadList.xcdatamodel */;
+			path = UploadList.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A92BF4B721F9FDFC0050ACCD /* Project object */;
 }

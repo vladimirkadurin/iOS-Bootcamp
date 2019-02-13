@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18A391" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="UploadItem" representedClassName="UploadItem" syncable="YES">
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="link" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="UploadItem" positionX="-2937.703125" positionY="-1897.98828125" width="128" height="73"/>
+    </elements>
+</model>
