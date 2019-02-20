@@ -84,6 +84,43 @@
             </objects>
             <point key="canvasLocation" x="994" y="152"/>
         </scene>
+        <!--Web ViewVC-->
+        <scene sceneID="Nfp-3S-OhB">
+            <objects>
+                <viewController storyboardIdentifier="WebViewVC" id="iUD-0I-CWJ" customClass="WebViewVC" customModule="SomeUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="R0J-ET-QzD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vwJ-sm-b5j">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="8cY-Rn-wMI">
+                                <rect key="frame" x="169" y="325" width="37" height="37"/>
+                                <color key="color" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vwJ-sm-b5j" firstAttribute="leading" secondItem="sX7-7q-Cvi" secondAttribute="leading" id="5nt-8y-wiN"/>
+                            <constraint firstItem="8cY-Rn-wMI" firstAttribute="centerY" secondItem="sX7-7q-Cvi" secondAttribute="centerY" id="QYf-CG-bjk"/>
+                            <constraint firstItem="8cY-Rn-wMI" firstAttribute="centerX" secondItem="sX7-7q-Cvi" secondAttribute="centerX" id="ZmK-O5-9OX"/>
+                            <constraint firstItem="sX7-7q-Cvi" firstAttribute="trailing" secondItem="vwJ-sm-b5j" secondAttribute="trailing" id="fY5-lL-4Rr"/>
+                            <constraint firstItem="vwJ-sm-b5j" firstAttribute="top" secondItem="sX7-7q-Cvi" secondAttribute="top" id="jYB-AI-jBh"/>
+                            <constraint firstItem="sX7-7q-Cvi" firstAttribute="bottom" secondItem="vwJ-sm-b5j" secondAttribute="bottom" id="xF7-1J-VPA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sX7-7q-Cvi"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="8cY-Rn-wMI" id="9YV-0C-rEC"/>
+                        <outlet property="webVIew" destination="vwJ-sm-b5j" id="eK3-RW-T7n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ilb-wf-nt5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1820" y="152"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="irg-ht-4HJ">
             <objects>

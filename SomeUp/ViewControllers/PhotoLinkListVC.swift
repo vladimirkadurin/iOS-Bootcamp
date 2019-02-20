@@ -32,12 +32,22 @@ class PhotoLinkListVC: UIViewController {
 
         photoLinksTableView.dataSource = self
         photoLinksTableView.delegate = self
+
+        do {
+            try fetchedResultsController.performFetch()
+        } catch {
+            let fetchError = error as NSError
+            showPopupWith(title: "Error", message: fetchError.localizedDescription)
+        }
     }
 }
 
 extension PhotoLinkListVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // TODO:
+        if let sections = fetchedResultsController.sections {
+            let sectionInfo = sections[section]
+            return sectionInfo.numberOfObjects
+        }
         return 0
     }
 
@@ -45,12 +55,18 @@ extension PhotoLinkListVC: UITableViewDataSource, UITableViewDelegate {
         var cell: UITableViewCell?
 
         if let linkCell = tableView.dequeueReusableCell(withIdentifier: "\(PhotoLinkCell.self)", for: indexPath) as? PhotoLinkCell {
-            // TODO:
-            //linkCell.loadWith(data: viewModel.getItemAt(index: indexPath.row))
+            linkCell.loadWith(data: fetchedResultsController.object(at: indexPath))
             cell = linkCell
         }
 
         return cell ?? UITableViewCell()
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let webViewVC = storyboard?.instantiateViewController(withIdentifier: "\(WebViewVC.self)") as? WebViewVC {
+            webViewVC.urlString = fetchedResultsController.object(at: indexPath).link
+            navigationController?.pushViewController(webViewVC, animated: true)
+        }
     }
 }
 
@@ -66,7 +82,7 @@ extension PhotoLinkListVC: NSFetchedResultsControllerDelegate {
     func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?) {
         switch type {
         case .insert:
-            if let indexPath = indexPath {
+            if let indexPath = newIndexPath {
                 photoLinksTableView.insertRows(at: [indexPath], with: .fade)
             }
         case .delete:

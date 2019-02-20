@@ -20,6 +20,7 @@
 		A92BF4D921FA05E30050ACCD /* GalleryPermissionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92BF4D821FA05E30050ACCD /* GalleryPermissionHandler.swift */; };
 		A92BF4DB21FA10100050ACCD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92BF4DA21FA10100050ACCD /* Constants.swift */; };
 		A92BF4DE21FA143B0050ACCD /* GalleryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92BF4DD21FA143B0050ACCD /* GalleryViewModel.swift */; };
+		A968E60B221C46F000ED40D0 /* WebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A968E60A221C46F000ED40D0 /* WebViewVC.swift */; };
 		A9A4DB612209D03600A3A268 /* PhotoLinkListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A4DB602209D03600A3A268 /* PhotoLinkListVC.swift */; };
 		A9A4DB642209D20400A3A268 /* PhotoLinkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A4DB622209D20400A3A268 /* PhotoLinkCell.swift */; };
 		A9A4DB652209D20400A3A268 /* PhotoLinkCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9A4DB632209D20400A3A268 /* PhotoLinkCell.xib */; };
@@ -50,6 +51,7 @@
 		A92BF4D821FA05E30050ACCD /* GalleryPermissionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryPermissionHandler.swift; sourceTree = "<group>"; };
 		A92BF4DA21FA10100050ACCD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A92BF4DD21FA143B0050ACCD /* GalleryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewModel.swift; sourceTree = "<group>"; };
+		A968E60A221C46F000ED40D0 /* WebViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewVC.swift; sourceTree = "<group>"; };
 		A9A4DB602209D03600A3A268 /* PhotoLinkListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLinkListVC.swift; sourceTree = "<group>"; };
 		A9A4DB622209D20400A3A268 /* PhotoLinkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLinkCell.swift; sourceTree = "<group>"; };
 		A9A4DB632209D20400A3A268 /* PhotoLinkCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoLinkCell.xib; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 			children = (
 				A92BF4D521F9FEA80050ACCD /* GalleryVC.swift */,
 				A9A4DB602209D03600A3A268 /* PhotoLinkListVC.swift */,
+				A968E60A221C46F000ED40D0 /* WebViewVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				A92BF4D621F9FEA80050ACCD /* GalleryVC.swift in Sources */,
 				A9A98DE42213211C00E00166 /* AppDelegate+Extension.swift in Sources */,
 				A9A4DB642209D20400A3A268 /* PhotoLinkCell.swift in Sources */,
+				A968E60B221C46F000ED40D0 /* WebViewVC.swift in Sources */,
 				A92BF4D921FA05E30050ACCD /* GalleryPermissionHandler.swift in Sources */,
 				A915E0002200A59B00009168 /* EmptyPlaceholderView.swift in Sources */,
 				A915DFFD220096E800009168 /* PhotoCell.swift in Sources */,
